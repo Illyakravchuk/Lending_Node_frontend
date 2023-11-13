@@ -1,38 +1,153 @@
+body{
+  background: #252525;
+}
 .App {
+
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 0;
+}
+#container{
+  width: 1440px;
+  height: 1024px;
+  background-color: #252525;
+  margin: 0 auto;
+}
+#content{
+  padding: 0 80px 0 80px;
+  color: #ffffff;
+
+}
+#left-panel{
+  width: 630px;
+  height: 1024px;
+  margin-top: -130px;
+
+}
+#right-panel{
+  width: 522px;
+  height: auto;
+  margin-top: 120px;
+
+}
+header{
+  text-align: right;
+  padding: 30px 0 0 0;
+
+}
+#rotate-allipse{
+float: right;
+margin-top: -130px;
+}
+h1{
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.input{
+  background: transparent;
+
+  border: none;
+  border-radius: 2px;
+
+  padding: 0 0 14px 0;
+}
+.input-group{
+  border-bottom: 3px solid #545454;
+  margin-top: 70px;
+}
+input.form-control{
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+
+}
+.input-group input.form-control {
+  box-shadow: none; 
+  outline: none; 
+  color: #ffffff;
+  transition: background-color 0.3s ease; 
+
+
+  &:focus {
+      background-color: transparent; 
+  }
+}
+.input-group input.form-control::placeholder {
+  color: #545454; 
+  transition: color 0.3s ease;
+}
+
+.input-group input.form-control:focus::placeholder {
+  color: transparent; 
+}
+.input-group-text{
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+
+}
+p{
+  color: #545454;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#test_reset{
+margin-top: 35px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a{
+  text-decoration: none;
+  color: #A91079;
+  font-size: 16px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button {
+  width: 278px;
+  height: 67px;
+  border: 5px solid #790252;
+  margin-top: 114px;
+  border-radius: 40px;
+  background: transparent;
+  color: #ffffff;
+  font-size: 24px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 70px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
 }
-
-.App-link {
-  color: #61dafb;
+button:hover{
+  background: #790252;
+  color: #ffffff;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#link_reg{
+margin-top: 115px;
+}
+a:hover{
+  text-decoration: underline;
+}
+.form-check-input{
+width: 30px;
+height: 30px;
+}
+.form-check label{
+  font-size: 16px;
+  color: #545454;
+  margin: 7px 0 0 15px;
+}
+#checkBoxs{
+  text-align: center;
+  margin-top: 42px;
+}
+#worker{
+  margin-right: 105px;
+}
+.form-check-input{
+  background-color: transparent;
+border: 2px solid #545454;
+}
+.form-check-input:checked {
+  background-color: transparent;
+  color: white; 
+  border: 2px solid #A91079;
 }
