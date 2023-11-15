@@ -1,25 +1,44 @@
 import React from 'react';
 import './main.css';
-import logo from './img/logo.svg';
-import person from './img/person.svg';
-import pictures from './img/pictures.svg';
-import globe from './img/globe.svg';
-import arrow from './img/arrow.svg';
+import logo from './icons/logo-main.svg';
+import person from './icons/person.svg';
+import pictures from './icons/pictures.svg';
+import globe from './icons/globe.svg';
+import arrow from './icons/arrow.svg';
+
+function toggleMessage() {
+  let messageContainer = document.getElementById("messageContainer");
+
+  if (messageContainer.style.opacity === "0" || messageContainer.style.opacity === "") {
+    messageContainer.style.display = "block";
+
+    setTimeout(() => {
+      messageContainer.style.opacity = "1";
+    }, 50);
+
+  } else {
+    messageContainer.style.opacity = "0";
+
+    setTimeout(() => {
+      messageContainer.style.display = "none";
+    }, 800);
+  }
+}
 
 function main() {
   return (
     <div className="main">
-      <header className="main-header">
+      <header2 className="main-header">
         <div className="container-menu">
           <div className="logo">
             <img src={logo} className="" alt="logo" />
           </div>
           <div className="container-button-menu">
             <div>
-              <button className="button-menu" onClick={handleButtonClick}>Home</button>
-              <button className="button-menu" onClick={handleButtonClick}>Purpose</button>
-              <button className="button-menu" onClick={handleButtonClick}>Expert</button>
-              <button className="button-menu" onClick={handleButtonClick}>FAQ</button>
+              <button className="button-menu" onClick=''>Home</button>
+              <button className="button-menu" onClick=''>Purpose</button>
+              <button className="button-menu" onClick=''>Expert</button>
+              <button className="button-menu" onClick=''>FAQ</button>
             </div>
           </div>
 
@@ -39,7 +58,7 @@ function main() {
         <div className="horizontal-line"> </div>
         <div className="text-find">Find your Expert to solve all problem!</div>
         <div className="text-look">Look for your expert in your field to solve problems and tasks!</div>
-        <button className="get-started" onClick={handleButtonClick}>Get started!</button>
+        <button className="get-started" onClick=''>Get started!</button>
         <div className="vertical-line"> </div>
 
         <div className="container-support">
@@ -74,32 +93,9 @@ function main() {
             <div className="ellipse"> </div>
           </div>
         </div>
-      </header>
+      </header2>
     </div>
   );
-}
-
-function toggleMessage() {
-  let messageContainer = document.getElementById("messageContainer");
-
-  if (messageContainer.style.opacity === "0" || messageContainer.style.opacity === "") {
-    messageContainer.style.display = "block";
-
-    setTimeout(() => {
-      messageContainer.style.opacity = "1";
-    }, 50);
-
-  } else {
-    messageContainer.style.opacity = "0";
-
-    setTimeout(() => {
-      messageContainer.style.display = "none";
-    }, 800);
-  }
-}
-
-function handleButtonClick() {
-
 }
 
 

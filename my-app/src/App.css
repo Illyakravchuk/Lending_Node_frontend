@@ -101,7 +101,7 @@ a{
   color: #A91079;
   font-size: 16px;
 }
-button {
+.button-login {
   width: 278px;
   height: 67px;
   border: 5px solid #790252;
@@ -116,7 +116,8 @@ button {
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
-button:hover{
+
+.button-login:hover{
   background: #790252;
   color: #ffffff;
 }

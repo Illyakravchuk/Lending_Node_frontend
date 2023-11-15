@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+
 const useLoginForm = (isSignUpClicked, onSignUpClick) => {
   const [fadeIn, setFadeIn] = useState(false);
   const [selectedCheckbox, setSelectedCheckbox] = useState(null);
@@ -34,11 +35,6 @@ const useLoginForm = (isSignUpClicked, onSignUpClick) => {
     }
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    alert("Form submitted!"); //just for test
-  };
-
   const handleSignUpLinkClick = () => {
     onSignUpClick();
     clearFormFields();
@@ -66,7 +62,6 @@ const useLoginForm = (isSignUpClicked, onSignUpClick) => {
     setEmail,
     handleCheckboxChange,
     handleCheckboxClick,
-    handleSubmit,
     handleSignUpLinkClick,
     clearFormFields,
     togglePasswordVisibility,

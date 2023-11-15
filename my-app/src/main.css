@@ -5,7 +5,12 @@
   .main-logo {
     pointer-events: none;
   }
-  
+
+  .header2{
+    text-align: center;
+    padding: 0 0 0 0;
+  }
+
   .main-header {
     background-color: #252525;
     max-width: 1440px;
@@ -33,8 +38,8 @@
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 24px; /* Розмір шрифту */
-    font-family: Tahoma, sans-serif; /* Сімейство шрифтів */
+    font-size: 24px; 
+    font-family: Tahoma, sans-serif; 
     left: 340px;
     border-radius: 15px;
     color: 424242;
@@ -90,7 +95,7 @@
     position: absolute;
     top: 184px;
     left: 90px;
-    height: 2px; /* Висота лінії */
+    height: 2px; 
     background: radial-gradient(50% 50% at 50% 50%, #545454 0%, rgba(84, 84, 84, 0) 100%);
   }
   
@@ -160,8 +165,6 @@
     transform: rotate(270deg);
     background: linear-gradient(270deg, #545454 0%, rgba(84, 84, 84, 0) 97.61%);
   }
-  
-  
   
   .container-support {
     position: absolute;
@@ -282,8 +285,8 @@
     left: 25px;
     border-radius: 10px;
     display: flex;
-    justify-content: center; /* Центруємо по горизонталі */
-    align-items: center; /* Центруємо по вертикалі */
+    justify-content: center; 
+    align-items: center; 
     background: #252525;
   }
   
@@ -431,7 +434,7 @@
     height: 555px;
     left: 1090px;
     top: 264px;
-    z-index: 1; /* Встановлюємо z-index для .container-ellipse */
+    z-index: 1; 
   } 
   
   .ellipse {
