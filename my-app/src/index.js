@@ -1,8 +1,9 @@
-import React, { useState } from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+ import React, { useState } from "react";
+ import ReactDOM from "react-dom/client";
+ import "./index.css";
+ import App from "./App";
+
+ import reportWebVitals from "./reportWebVitals";
 
 const Root = () => {
   const [isSignUpClicked, setSignUpClicked] = useState(false);

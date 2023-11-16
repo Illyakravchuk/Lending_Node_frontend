@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import useLoginForm from "./useLoginForm";
+import Main from "./main";
+
+import logo from './icons/logo.svg';
+import account from './icons/account.svg';
+import eye_2 from './icons/eye_2.svg';
+import eye from './icons/eye.svg';
+import mail from './icons/mail.svg';
+import Group_54 from './icons/Group 54.svg';
+import Group_55 from './icons/Group 55.svg';
+import lock_svgrepo from './icons/lock_svgrepo.com.svg';
 
 function App({ isSignUpClicked, onSignUpClick }) {
   const {
@@ -15,23 +25,35 @@ function App({ isSignUpClicked, onSignUpClick }) {
     setEmail,
     handleCheckboxChange,
     handleCheckboxClick,
-    handleSubmit,
     handleSignUpLinkClick,
     togglePasswordVisibility,
   } = useLoginForm(isSignUpClicked, onSignUpClick);
+
+  const [showMain, setShowMain] = useState(false);
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if (!isSignUpClicked || onSignUpClick) {
+      setShowMain(true);
+    }
+  };
+
+  if (showMain) {
+    return <Main />;
+  }
 
   return (
     <div className={`App ${fadeIn ? "fade-in" : ""}`}>
       <div id='container'>
         <div id='content'>
           <header>
-            <img src='./icons/logo.svg' alt='' />
+            <img src={logo}  className="" alt='' />
           </header>
           <div class='row'>
             <div class='col'>
               <div id='left-panel'>
-                <img src='./icons/Group 54.svg' alt='' />
-                <img id='rotate-allipse' src='./icons/Group 55.svg' alt='' />
+                <img src={Group_54} alt='' />
+                <img id='rotate-allipse' src={Group_55} alt='' />
               </div>
             </div>
             <div class='col'></div>
@@ -43,7 +65,7 @@ function App({ isSignUpClicked, onSignUpClick }) {
                 <form onSubmit={handleSubmit}>
                   <div class=' input-group flex-nowrap'>
                     <span class='input-group-text' id='addon-wrapping'>
-                      <img src='./icons/account.svg' alt='' />
+                      <img src={account} alt='' />
                     </span>
                     <input
                       type='text'
@@ -56,7 +78,7 @@ function App({ isSignUpClicked, onSignUpClick }) {
                   </div>
                   <div class=' input-group flex-nowrap'>
                     <span class='input-group-text' id='addon-wrapping'>
-                      <img src='./icons/lock_svgrepo.com.svg' alt='' />
+                      <img src={lock_svgrepo} alt='' />
                     </span>
                     <input
                       type={passwordVisible ? "text" : "password"}
@@ -76,8 +98,8 @@ function App({ isSignUpClicked, onSignUpClick }) {
                         id='eye-icon'
                         src={
                           passwordVisible
-                            ? "./icons/eye.svg"
-                            : "./icons/eye_2.svg"
+                            ? {eye}
+                            : {eye_2}
                         }
                         alt=''
                       />
@@ -86,7 +108,7 @@ function App({ isSignUpClicked, onSignUpClick }) {
                   {isSignUpClicked ? (
                     <div class=' input-group flex-nowrap'>
                       <span class='input-group-text' id='addon-wrapping'>
-                        <img src='./icons/mail.svg' alt='' />
+                        <img src={mail} alt='' />
                       </span>
                       <input
                         type='email'
@@ -144,7 +166,7 @@ function App({ isSignUpClicked, onSignUpClick }) {
                       </a>
                     </p>
                   )}
-                  <button class='sign_in' type='submit'>
+                  <button className={`sign_in button-login`} type='submit'>
                     {isSignUpClicked ? "Sign Up" : "Sign In"}
                   </button>
                 </form>
