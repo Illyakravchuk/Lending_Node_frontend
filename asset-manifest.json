@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Lending_Node_frontend/static/css/main.78613743.css",
+    "main.js": "/Lending_Node_frontend/static/js/main.29fcebec.js",
+    "static/js/787.d4aba7ab.chunk.js": "/Lending_Node_frontend/static/js/787.d4aba7ab.chunk.js",
+    "static/media/logo.svg": "/Lending_Node_frontend/static/media/logo.0973c32360206828723f677ff6167029.svg",
+    "static/media/logo-main.svg": "/Lending_Node_frontend/static/media/logo-main.811fd9eb07e931fbf4ab4c6fc1bda480.svg",
+    "static/media/pictures.svg": "/Lending_Node_frontend/static/media/pictures.b8a72abdd090eefb70bad096be4382f6.svg",
+    "static/media/Group 54.svg": "/Lending_Node_frontend/static/media/Group 54.72ac4dcaf9b76e06d1fe50e1bfb8ba19.svg",
+    "static/media/eye_2.svg": "/Lending_Node_frontend/static/media/eye_2.02bd5513e4429c1ccfb87512774529ef.svg",
+    "static/media/globe.svg": "/Lending_Node_frontend/static/media/globe.740dda1296b99a4a57029c7edfdb253c.svg",
+    "index.html": "/Lending_Node_frontend/index.html",
+    "static/media/lock_svgrepo.com.svg": "/Lending_Node_frontend/static/media/lock_svgrepo.com.8953bac2e040bea84300560b5b4700d9.svg",
+    "static/media/mail.svg": "/Lending_Node_frontend/static/media/mail.9c7e3696642f034de68dac1bbc0588ab.svg",
+    "static/media/eye.svg": "/Lending_Node_frontend/static/media/eye.c12c5616948430eccc80db9bcd92fdff.svg",
+    "static/media/Group 55.svg": "/Lending_Node_frontend/static/media/Group 55.06d7b780fc7ebdb265535fa890450c6e.svg",
+    "static/media/person.svg": "/Lending_Node_frontend/static/media/person.fbb6c097fea185de5534b0e2196db280.svg",
+    "static/media/account.svg": "/Lending_Node_frontend/static/media/account.a4d79a567f6e996c94080dbbb489a1de.svg",
+    "static/media/arrow.svg": "/Lending_Node_frontend/static/media/arrow.c9081d19f28f537d41d621742b50e176.svg",
+    "main.78613743.css.map": "/Lending_Node_frontend/static/css/main.78613743.css.map",
+    "main.29fcebec.js.map": "/Lending_Node_frontend/static/js/main.29fcebec.js.map",
+    "787.d4aba7ab.chunk.js.map": "/Lending_Node_frontend/static/js/787.d4aba7ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78613743.css",
+    "static/js/main.29fcebec.js"
+  ]
+}
